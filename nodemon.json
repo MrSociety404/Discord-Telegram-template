@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "watch": ["src"],
+  "ext": ".ts,.js,.json",
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "exec": "rm -rf ./dist/* && npx tsc && node --inspect ./dist/index.js",
+  "signal": "SIGINT"
+}
